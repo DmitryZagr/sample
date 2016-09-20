@@ -5,6 +5,6 @@ deploy:
   provider: heroku
   api_key:
     secure: WwApWTb0pUKFiTjRJBwwBeIWpvWpNzOYG0l+A+oKrmeAUwo1TFy46bf9iVoG+pmySyu8aA+tNjoKjr8byVPsynZoXxkRqDgCiQ2tZgFV4XyKVeAiKllkFPQ9WpOOjgpEL9oVbmQuLBOxoCuEQlsG/q/7gnT+dlyIKXXFUafZ55jgncrGDh549CQWF4t23InwI6qkz4CpxFEcXl/bFAt0+2GqqWqBKMXrwMm3/Wwwg8jhUQzsv875hmPYdMLPj2LQrxXWxmKUEjgrFqw5FsdZdhX6fheD6HGrAP7avPx//wsd/6jxb5xqk2xn6fybmKrayZmK/RreAUbo0hgF383SSfGhQ4oLdPbur+s4nMytwgdH5xzODT+OKIr7OKV+GA2sEjaGPV77B/vCQaicITmOue7zqiQO4Pizp6VXJCdA10fKibM59EKM6B6OAu82i/X/+eKJAcfQQEyEOilaP/KKuWjGixnC/JaqeoLbDNyqW9O+JkGTbQzwOcvLGlMe46FgIvzelIbcg9EVccltSS1uwOTQSQNWF51ygY8jS7+nGhrpImlXkqMrUhSXzpIA8Fcsjd4fVG3KD/Z0/zhwQWtnCDn/OKLBEOmkOYimPi9dBGSs3JpIFtnRiuyEpuf8tMaCi9pnlJFGhGjzuFCFj6SrJ0TkGg4eBhqeRqCw19IPkS4=
-  app: thawing-eyrie-25120
+  app: sample
   on:
     repo: DmitryZagr/sample
