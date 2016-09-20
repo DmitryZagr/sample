@@ -4,6 +4,6 @@ let filter = require('./public/main').filter;
 
 
 
-assert.equal(hello('Test'), 'Привет, Test');
+assert.equal(hello('Test'), 'Приветr, Test');
 //TODO: Кейсы для функции filter
 // assert.equal(filter('КЕК'), '***');

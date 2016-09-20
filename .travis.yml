@@ -8,3 +8,5 @@ deploy:
   app: thawing-eyrie-25120
   on:
     repo: DmitryZagr/sample
+  run:
+    - test.js
