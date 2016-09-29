@@ -1,28 +1,27 @@
 let express = require('express');
+let technologger = require('technologger');
 let parser = require('body-parser');
 let app = express();
-let technoDoc = require('techno-gendoc');
-let path = require('path');
-
-let technolibs = require('technolibs');
+let persons = {};
 
 app.use('/', express.static('public'));
-technoDoc.generate(require('./api'), 'public');
 
 app.use(parser.json());
-app.use('/libs', express.static('node_modules'));
+app.use(technologger);
 
-app.post('/api/messages', (req, res) => {
-	technolibs.publish(req.body).then(body => res.json(req.body));
-});
+app.post('/users', (req, res) => {
+    console.log(req.body);
 
-app.get('/api/messages', function (req, res) {
-	res.send([
-		technoDoc.mock(require('./api/scheme/Message')),
-		technoDoc.mock(require('./api/scheme/Message')),
-		technoDoc.mock(require('./api/scheme/Message')),
-		technoDoc.mock(require('./api/scheme/Message'))
-	])
+    // TODO: вернуть количество обращений
+    if(req.body.email in persons) {
+        persons[req.body.email] = +persons[req.body.email] + 1;
+    } else {
+        persons[req.body.email] = 1;
+    }
+
+    res.send(persons[req.body.email] + ' ');
+    
+
 });
 
 app.listen(process.env.PORT || 3000, () => {
